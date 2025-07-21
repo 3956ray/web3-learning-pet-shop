@@ -1,0 +1,1218 @@
+{
+  "contractName": "AssertGeneral",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bool",
+          "name": "result",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "message",
+          "type": "string"
+        }
+      ],
+      "name": "TestEvent",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bool\",\"name\":\"result\",\"type\":\"bool\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"}],\"name\":\"TestEvent\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"truffle/AssertGeneral.sol\":\"AssertGeneral\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"truffle/AssertGeneral.sol\":{\"keccak256\":\"0xcc71cd277c2b0e2ae7a278e06c1f6cc701a5029ffae598357639802c931f43c5\",\"urls\":[\"bzz-raw://94984d406b3219ad593ddea3b7d673763d6a39fd2d6bf96634bed9efa6c84985\",\"dweb:/ipfs/QmRKDnBmNHYYkPWAMhfSPfcevUmftPkNAr6K3VfcamUtGE\"]}},\"version\":1}",
+  "bytecode": "0x61025c610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c806378122f3a1461003a575b600080fd5b81801561004657600080fd5b506101006004803603602081101561005d57600080fd5b810190808035906020019064010000000081111561007a57600080fd5b82018360208201111561008c57600080fd5b803590602001918460018302840111640100000000831117156100ae57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061011a565b604051808215151515815260200191505060405180910390f35b6000610127600083610130565b60009050919050565b811561018257600115157fd204e27263771793b3472e4c07118500eb1ab892c2b2f0a4b90b33c33d4df42f604051808060200182810382526000815260200160200191505060405180910390a2610223565b600015157fd204e27263771793b3472e4c07118500eb1ab892c2b2f0a4b90b33c33d4df42f826040518080602001828103825283818151815260200191508051906020019080838360005b838110156101e85780820151818401526020810190506101cd565b50505050905090810190601f1680156102155780820380516001836020036101000a031916815260200191505b509250505060405180910390a25b505056fea265627a7a7231582075f6ebdac79346d45605ccef11deed617e2cf9e6e3c759561b4daeaf2ae7177964736f6c63430005100032",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100355760003560e01c806378122f3a1461003a575b600080fd5b81801561004657600080fd5b506101006004803603602081101561005d57600080fd5b810190808035906020019064010000000081111561007a57600080fd5b82018360208201111561008c57600080fd5b803590602001918460018302840111640100000000831117156100ae57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061011a565b604051808215151515815260200191505060405180910390f35b6000610127600083610130565b60009050919050565b811561018257600115157fd204e27263771793b3472e4c07118500eb1ab892c2b2f0a4b90b33c33d4df42f604051808060200182810382526000815260200160200191505060405180910390a2610223565b600015157fd204e27263771793b3472e4c07118500eb1ab892c2b2f0a4b90b33c33d4df42f826040518080602001828103825283818151815260200191508051906020019080838360005b838110156101e85780820151818401526020810190506101cd565b50505050905090810190601f1680156102155780820380516001836020036101000a031916815260200191505b509250505060405180910390a25b505056fea265627a7a7231582075f6ebdac79346d45605ccef11deed617e2cf9e6e3c759561b4daeaf2ae7177964736f6c63430005100032",
+  "sourceMap": "67:1331:10:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "67:1331:10:-;;;;;;;;;;;;;;;;;;;;;;;;712:128;;8:9:-1;5:2;;;30:1;27;20:12;5:2;712:128:10;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;712:128:10;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;712:128:10;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;712:128:10;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;712:128:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;712:128:10;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;765:11;788:23;796:5;803:7;788;:23::i;:::-;828:5;821:12;;712:128;;;:::o;1213:183::-;1288:6;1285:104;;;1323:4;1313:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1285:104;;;1374:5;1364:25;;;1381:7;1364:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1364:25:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1285:104;1213:183;;:::o",
+  "source": "//SPDX-License-Identifier: MIT\npragma solidity >= 0.4.15 < 0.9.0;\n\nlibrary AssertGeneral {\n\n    /*\n        Event: TestEvent\n\n        Fired when an assertion is made.\n\n        Params:\n            result (bool) - Whether or not the assertion holds.\n            message (string) - A message to display if the assertion does not hold.\n    */\n    event TestEvent(bool indexed result, string message);\n    \n    // ************************************** general **************************************\n\n    /*\n        Function: fail()\n\n        Mark the test as failed.\n\n        Params:\n            message (string) - A message associated with the failure.\n\n        Returns:\n            result (bool) - false.\n    */\n    function fail(string memory message) public returns (bool result) {\n        _report(false, message);\n        return false;\n    }\n    \n    /******************************** internal ********************************/\n\n        /*\n            Function: _report\n\n            Internal function for triggering <TestEvent>.\n\n            Params:\n                result (bool) - The test result (true or false).\n                message (string) - The message that is sent if the assertion fails.\n        */\n    function _report(bool result, string memory message) internal {\n        if(result)\n            emit TestEvent(true, \"\");\n        else\n            emit TestEvent(false, message);\n    }\n}\n",
+  "sourcePath": "truffle\\AssertGeneral.sol",
+  "ast": {
+    "absolutePath": "truffle/AssertGeneral.sol",
+    "exportedSymbols": {
+      "AssertGeneral": [
+        3432
+      ]
+    },
+    "id": 3433,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3390,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".15",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:34:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3432,
+        "linearizedBaseContracts": [
+          3432
+        ],
+        "name": "AssertGeneral",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3396,
+            "name": "TestEvent",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3392,
+                  "indexed": true,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3396,
+                  "src": "358:19:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3391,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "358:4:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3394,
+                  "indexed": false,
+                  "name": "message",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3396,
+                  "src": "379:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3393,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "379:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "357:37:10"
+            },
+            "src": "342:53:10"
+          },
+          {
+            "body": {
+              "id": 3410,
+              "nodeType": "Block",
+              "src": "778:62:10",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 3404,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "796:5:10",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 3405,
+                        "name": "message",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3398,
+                        "src": "803:7:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 3403,
+                      "name": "_report",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3431,
+                      "src": "788:7:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory)"
+                      }
+                    },
+                    "id": 3406,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "788:23:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3407,
+                  "nodeType": "ExpressionStatement",
+                  "src": "788:23:10"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 3408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "828:5:10",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 3402,
+                  "id": 3409,
+                  "nodeType": "Return",
+                  "src": "821:12:10"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3411,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fail",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3399,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3398,
+                  "name": "message",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3411,
+                  "src": "726:21:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3397,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "726:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "725:23:10"
+            },
+            "returnParameters": {
+              "id": 3402,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3401,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3411,
+                  "src": "765:11:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3400,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "765:4:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "764:13:10"
+            },
+            "scope": 3432,
+            "src": "712:128:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3430,
+              "nodeType": "Block",
+              "src": "1275:121:10",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "id": 3418,
+                    "name": "result",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3413,
+                    "src": "1288:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "eventCall": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "66616c7365",
+                          "id": 3425,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1374:5:10",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 3426,
+                          "name": "message",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 3415,
+                          "src": "1381:7:10",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 3424,
+                        "name": "TestEvent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3396,
+                        "src": "1364:9:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                          "typeString": "function (bool,string memory)"
+                        }
+                      },
+                      "id": 3427,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1364:25:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$",
+                        "typeString": "tuple()"
+                      }
+                    },
+                    "id": 3428,
+                    "nodeType": "EmitStatement",
+                    "src": "1359:30:10"
+                  },
+                  "id": 3429,
+                  "nodeType": "IfStatement",
+                  "src": "1285:104:10",
+                  "trueBody": {
+                    "eventCall": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "74727565",
+                          "id": 3420,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1323:4:10",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "",
+                          "id": 3421,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1329:2:10",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                            "typeString": "literal_string \"\""
+                          },
+                          "value": ""
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                            "typeString": "literal_string \"\""
+                          }
+                        ],
+                        "id": 3419,
+                        "name": "TestEvent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3396,
+                        "src": "1313:9:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_event_nonpayable$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                          "typeString": "function (bool,string memory)"
+                        }
+                      },
+                      "id": 3422,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1313:19:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_tuple$__$",
+                        "typeString": "tuple()"
+                      }
+                    },
+                    "id": 3423,
+                    "nodeType": "EmitStatement",
+                    "src": "1308:24:10"
+                  }
+                }
+              ]
+            },
+            "documentation": "****************************** internal *******************************",
+            "id": 3431,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_report",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3416,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3413,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3431,
+                  "src": "1230:11:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3412,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1230:4:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3415,
+                  "name": "message",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3431,
+                  "src": "1243:21:10",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3414,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1243:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1229:36:10"
+            },
+            "returnParameters": {
+              "id": 3417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1275:0:10"
+            },
+            "scope": 3432,
+            "src": "1213:183:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3433,
+        "src": "67:1331:10"
+      }
+    ],
+    "src": "31:1368:10"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "truffle/AssertGeneral.sol",
+      "exportedSymbols": {
+        "AssertGeneral": [
+          3432
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".15",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 3390,
+        "name": "PragmaDirective",
+        "src": "31:34:10"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "library",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3432
+          ],
+          "name": "AssertGeneral",
+          "scope": 3433
+        },
+        "children": [
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "TestEvent"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": true,
+                      "name": "result",
+                      "scope": 3396,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3391,
+                        "name": "ElementaryTypeName",
+                        "src": "358:4:10"
+                      }
+                    ],
+                    "id": 3392,
+                    "name": "VariableDeclaration",
+                    "src": "358:19:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "name": "message",
+                      "scope": 3396,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 3393,
+                        "name": "ElementaryTypeName",
+                        "src": "379:6:10"
+                      }
+                    ],
+                    "id": 3394,
+                    "name": "VariableDeclaration",
+                    "src": "379:14:10"
+                  }
+                ],
+                "id": 3395,
+                "name": "ParameterList",
+                "src": "357:37:10"
+              }
+            ],
+            "id": 3396,
+            "name": "EventDefinition",
+            "src": "342:53:10"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "fail",
+              "scope": 3432,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "message",
+                      "scope": 3411,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 3397,
+                        "name": "ElementaryTypeName",
+                        "src": "726:6:10"
+                      }
+                    ],
+                    "id": 3398,
+                    "name": "VariableDeclaration",
+                    "src": "726:21:10"
+                  }
+                ],
+                "id": 3399,
+                "name": "ParameterList",
+                "src": "725:23:10"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "result",
+                      "scope": 3411,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3400,
+                        "name": "ElementaryTypeName",
+                        "src": "765:4:10"
+                      }
+                    ],
+                    "id": 3401,
+                    "name": "VariableDeclaration",
+                    "src": "765:11:10"
+                  }
+                ],
+                "id": 3402,
+                "name": "ParameterList",
+                "src": "764:13:10"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3431,
+                              "type": "function (bool,string memory)",
+                              "value": "_report"
+                            },
+                            "id": 3403,
+                            "name": "Identifier",
+                            "src": "788:7:10"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "66616c7365",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "false"
+                            },
+                            "id": 3404,
+                            "name": "Literal",
+                            "src": "796:5:10"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3398,
+                              "type": "string memory",
+                              "value": "message"
+                            },
+                            "id": 3405,
+                            "name": "Identifier",
+                            "src": "803:7:10"
+                          }
+                        ],
+                        "id": 3406,
+                        "name": "FunctionCall",
+                        "src": "788:23:10"
+                      }
+                    ],
+                    "id": 3407,
+                    "name": "ExpressionStatement",
+                    "src": "788:23:10"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3402
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "66616c7365",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "false"
+                        },
+                        "id": 3408,
+                        "name": "Literal",
+                        "src": "828:5:10"
+                      }
+                    ],
+                    "id": 3409,
+                    "name": "Return",
+                    "src": "821:12:10"
+                  }
+                ],
+                "id": 3410,
+                "name": "Block",
+                "src": "778:62:10"
+              }
+            ],
+            "id": 3411,
+            "name": "FunctionDefinition",
+            "src": "712:128:10"
+          },
+          {
+            "attributes": {
+              "documentation": "****************************** internal *******************************",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "_report",
+              "scope": 3432,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "result",
+                      "scope": 3431,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 3412,
+                        "name": "ElementaryTypeName",
+                        "src": "1230:4:10"
+                      }
+                    ],
+                    "id": 3413,
+                    "name": "VariableDeclaration",
+                    "src": "1230:11:10"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "message",
+                      "scope": 3431,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 3414,
+                        "name": "ElementaryTypeName",
+                        "src": "1243:6:10"
+                      }
+                    ],
+                    "id": 3415,
+                    "name": "VariableDeclaration",
+                    "src": "1243:21:10"
+                  }
+                ],
+                "id": 3416,
+                "name": "ParameterList",
+                "src": "1229:36:10"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3417,
+                "name": "ParameterList",
+                "src": "1275:0:10"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 3413,
+                          "type": "bool",
+                          "value": "result"
+                        },
+                        "id": 3418,
+                        "name": "Identifier",
+                        "src": "1288:6:10"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "tuple()",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                                      "typeString": "literal_string \"\""
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3396,
+                                  "type": "function (bool,string memory)",
+                                  "value": "TestEvent"
+                                },
+                                "id": 3419,
+                                "name": "Identifier",
+                                "src": "1313:9:10"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 3420,
+                                "name": "Literal",
+                                "src": "1323:4:10"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"\"",
+                                  "value": ""
+                                },
+                                "id": 3421,
+                                "name": "Literal",
+                                "src": "1329:2:10"
+                              }
+                            ],
+                            "id": 3422,
+                            "name": "FunctionCall",
+                            "src": "1313:19:10"
+                          }
+                        ],
+                        "id": 3423,
+                        "name": "EmitStatement",
+                        "src": "1308:24:10"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "tuple()",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3396,
+                                  "type": "function (bool,string memory)",
+                                  "value": "TestEvent"
+                                },
+                                "id": 3424,
+                                "name": "Identifier",
+                                "src": "1364:9:10"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "66616c7365",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "false"
+                                },
+                                "id": 3425,
+                                "name": "Literal",
+                                "src": "1374:5:10"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3415,
+                                  "type": "string memory",
+                                  "value": "message"
+                                },
+                                "id": 3426,
+                                "name": "Identifier",
+                                "src": "1381:7:10"
+                              }
+                            ],
+                            "id": 3427,
+                            "name": "FunctionCall",
+                            "src": "1364:25:10"
+                          }
+                        ],
+                        "id": 3428,
+                        "name": "EmitStatement",
+                        "src": "1359:30:10"
+                      }
+                    ],
+                    "id": 3429,
+                    "name": "IfStatement",
+                    "src": "1285:104:10"
+                  }
+                ],
+                "id": 3430,
+                "name": "Block",
+                "src": "1275:121:10"
+              }
+            ],
+            "id": 3431,
+            "name": "FunctionDefinition",
+            "src": "1213:183:10"
+          }
+        ],
+        "id": 3432,
+        "name": "ContractDefinition",
+        "src": "67:1331:10"
+      }
+    ],
+    "id": 3433,
+    "name": "SourceUnit",
+    "src": "31:1368:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-07-21T11:06:26.236Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
