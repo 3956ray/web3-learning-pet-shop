@@ -4,7 +4,7 @@ contract Adoption {
 
     address[16] public adopters;
 
-    // adding a pet
+    // 增加一个pet
     function adopt(uint petId) public returns (uint) {
         require(petId >= 0 && petId <= 15);
 
@@ -13,7 +13,7 @@ contract Adoption {
         return petId;
     }
 
-    // retrieving the adopters
+    // 检索adopters
     function getAdopters() public view returns (address[16] memory) {
         return adopters;
     }

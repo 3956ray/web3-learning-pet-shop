@@ -6,16 +6,16 @@ import "../contracts/Adoption.sol";
 
 
 contract TestAdoption {
-  // The address of the adoption contract to be tested
+  // 这个地方是调用合约的地址
   Adoption adoption = Adoption(DeployedAddresses.Adoption());
 
   // The id of the pet that will be used for testing
-  uint expectedPetId = 8;
+  uint expectedPetId = 7;
 
   //The expected owner of adopted pet is this contract
   address expectedAdopter = address(this);
 
-  // Testing the adopt() function
+  // 测试adopt() function
     function testUserCanAdoptPet() public {
         uint returnedId = adoption.adopt(expectedPetId);
 
@@ -27,9 +27,9 @@ contract TestAdoption {
         Assert.equal(adopter, expectedAdopter, "Owner of the expected pet should be this contract");
     }
 
-    // Testing retrieval of all pet owners
+    // 测试检索功能
     function testGetAdopterAddressByPetIdInArray() public {
-        // Store adopters in memory rather than contract's storage
+        // 将adopters的数据存进缓存，不是合约的存储
         address[16] memory adopters = adoption.getAdopters();
 
         Assert.equal(adopters[expectedPetId], expectedAdopter, "Owner of the expected pet should be this contract");
